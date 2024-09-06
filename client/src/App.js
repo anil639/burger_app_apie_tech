@@ -45,6 +45,10 @@ function App() {
       const data = await response.json();
       alert(`Order placed successfully! Order Number: ${data.orderNumber}`);
       fetchNextOrderNumber();
+      setBurger([]);
+      setQuantity(1);
+      setTotalPrice(0);
+      setCustomerPhone("");
     } catch (error) {
       console.error("Error placing order:", error);
     }
