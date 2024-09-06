@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+/* manual */
+.burger-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bread-top,
+.bread-bottom {
+  width: 200px;
+  height: 40px;
+  background-color: #f08e4a;
+  border-radius: 50px 50px 0 0;
+  margin: 10px 0;
+}
+
+.bread-bottom {
+  border-radius: 0 0 50px 50px;
+}
+
+.slice {
+  width: 180px;
+  height: 30px;
+  margin: 5px 0;
+}
+
+.slice.aloo-tikki {
+  background-color: #d2691e;
+  border-radius: 25px;
+}
+
+.slice.cheese {
+  background-color: #f5e50a;
+  height: 15px;
+  border-radius: 15px;
+}
+/* --------- */
+.burger-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.burger-controls button {
+  margin: 5px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-controls button:hover {
+  background-color: #45a049;
+}
